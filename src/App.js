@@ -6,11 +6,8 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path={`${process.env.PUBLIC_URL}/`}></Route>
         <Route path="/movie/:id" element={<Detail />}></Route>
-        <Route
-          path={`${process.env.PUBLIC_URL}/react-movie`}
-          element={<Home />}
-        ></Route>
       </Routes>
     </Router>
   );

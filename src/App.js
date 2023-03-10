@@ -7,7 +7,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/movie/:id" element={<Detail />}></Route>
-        <Route path="/react-movie" element={<Home />}></Route>
+        <Route
+          path={`${process.env.PUBLIC_URL}/react-movie`}
+          element={<Home />}
+        ></Route>
       </Routes>
     </Router>
   );

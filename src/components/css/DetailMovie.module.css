@@ -1,0 +1,54 @@
+.coverimg {
+  position: absolute;
+  margin: 30px;
+  width: 500px;
+  height: 600px;
+}
+.info {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  width: 900px;
+  height: 600px;
+  margin: 30px;
+}
+.title {
+  text-align: center;
+  color: #d98d8d;
+  font-size: 30px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+.summary {
+  font-size: 20px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.rating {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+}
+.runtime {
+  position: absolute;
+  left: 0;
+  margin: 50px 10px;
+}
+.genres {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  right: 0;
+  margin: 10px;
+}

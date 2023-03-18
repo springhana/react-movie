@@ -1,0 +1,27 @@
+.movie_contain {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movie_inner {
+  position: absolute;
+  width: 1350px;
+  height: 1350px;
+  border-radius: 50%;
+  /* background-color: red; */
+}
+.movie_pic {
+  position: absolute;
+  width: 230px;
+  height: 330px;
+  border: 10px solid black;
+  transition: ease-in-out 0.5s;
+}
+.movie_pic:hover {
+  position: absolute;
+  border: 5px solid #3e3e3e;
+  transform: translateY(-200px);
+  width: 400px;
+  height: 500px;
+}

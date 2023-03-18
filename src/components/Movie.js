@@ -1,19 +1,22 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-
-function Movie({ id, coverImg, title, summary, genres }) {
+import styles from "./css/Movie.module.css";
+function Movie({ id, coverImg, title, con }) {
   return (
-    <div>
-      <img src={coverImg} alt={title} />
-      <h2>
-        <Link to={`/movie/${id}`}>{title}</Link>
-      </h2>
-      <p>{summary.length > 235 ? `${summary.slice(0, 235)}...` : summary}</p>
-      <ul>
-        {genres.map((g) => (
-          <li key={g}>{g}</li>
-        ))}
-      </ul>
+    <div className={styles.movie_contain}>
+      <div
+        className={styles.movie_inner}
+        style={{ transform: `rotate(${con}deg)` }}
+      >
+        <Link to={`/movie/${id}`}>
+          <img
+            className={styles.movie_pic}
+            src={coverImg}
+            alt={title}
+            style={{ rotate: `-48deg` }}
+          />
+        </Link>
+      </div>
     </div>
   );
 }
@@ -22,8 +25,6 @@ Movie.propTypes = {
   id: PropTypes.number.isRequired,
   coverImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  summary: PropTypes.string.isRequired,
-  genres: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Movie;

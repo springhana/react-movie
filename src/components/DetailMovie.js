@@ -1,24 +1,48 @@
 import PropTypes from "prop-types";
-
-function Movie({ id, title, coverImg, description, rating, runtime, genres }) {
+import styles from "./css/DetailMovie.module.css";
+function DetailMovie({
+  id,
+  title,
+  coverImg,
+  summary,
+  rating,
+  runtime,
+  genres,
+  background,
+}) {
   return (
-    <div id={id}>
-      <img src={coverImg} alt="{title}" />
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <p>{rating}</p>
-      <p>{runtime}</p>
-      <p>Tag</p>
-      <ul>
-        {genres.map((g) => (
-          <li key={g}>{g}</li>
-        ))}
-      </ul>
+    <div
+      id={id}
+      style={{
+        background: `url(${background})`,
+        backgroundSize: "cover",
+        width: "100%",
+        height: "90vh",
+      }}
+    >
+      <img src={coverImg} alt="{title}" className={styles.coverimg} />
+
+      <div className={styles.info}>
+        <h1 className={styles.title}>{title}</h1>
+        <p className={styles.summary}>{summary}</p>
+        <div className={styles.tag}>
+          <p className={styles.rating}>rating : {rating}</p>
+          <p className={styles.runtime}>runtime : {runtime}</p>
+          <div className={styles.genres}>
+            <p>Tag</p>
+            <ul>
+              {genres.map((g) => (
+                <li key={g}>{g}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
-Movie.prototype = {
+DetailMovie.prototype = {
   id: PropTypes.number.isRequired,
   coverImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
@@ -27,4 +51,4 @@ Movie.prototype = {
   rating: PropTypes.number.isRequired,
 };
 
-export default Movie;
+export default DetailMovie;

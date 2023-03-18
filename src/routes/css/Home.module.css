@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "DynaPuff", cursive;
+  box-sizing: border-box;
+  z-index: auto;
+}
+.body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  overflow: hidden;
+  background: #e4e4dd;
+}
+.contain {
+  position: absolute;
+  margin-top: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animate 45s infinite;
+}
+.contain:hover {
+  animation-play-state: paused;
+}
+.pic_Frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1210px;
+  height: 1210px;
+  border-radius: 50%;
+  background: #d9adad;
+  border: 10px solid black;
+}
+.loading {
+  position: absolute;
+  top: 0;
+  margin-top: 200px;
+}
+
+@keyframes animate {
+  0% {
+    rotate: 0deg;
+  }
+  6.25% {
+    rotate: 24deg;
+  }
+  12.5% {
+    rotate: 48deg;
+  }
+  18.75% {
+    rotate: 72deg;
+  }
+  25% {
+    rotate: 96deg;
+  }
+  31.25% {
+    rotate: 120deg;
+  }
+  37.5% {
+    rotate: 144deg;
+  }
+  43.75% {
+    rotate: 168deg;
+  }
+  50% {
+    rotate: 192deg;
+  }
+  56.25% {
+    rotate: 190deg;
+  }
+  62.5% {
+    rotate: 216deg;
+  }
+  68.75% {
+    rotate: 240deg;
+  }
+  75% {
+    rotate: 264deg;
+  }
+  81.25% {
+    rotate: 288deg;
+  }
+  87.5% {
+    rotate: 312deg;
+  }
+  93.75% {
+    rotate: 336deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

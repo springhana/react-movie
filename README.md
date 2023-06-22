@@ -9,10 +9,10 @@
 
 # 장르 화면
 ※ 네비게이션 바에서 장르들 중 하나의 페이지입니다.
-<br>
+<br><br>
 ![image](https://github.com/springhana/react-movie/assets/97121074/58ae203c-ddf9-4e0d-a057-fc4a9aa6ebe2)
 
 # 영화 화면
 ※ 영화 하나를 선택하면 나타나는 페이지 입니다.
-<br>
+<br><br>
 ![image](https://github.com/springhana/react-movie/assets/97121074/46cf4944-2746-42f4-87b5-875e049770d9)

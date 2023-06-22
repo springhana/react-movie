@@ -4,7 +4,7 @@
 
 # 메인 화면
 ※ 첫 화면 페이지 입니다.
-<br>
+<br><br>
 ![image](https://github.com/springhana/react-movie/assets/97121074/805e2a13-e01d-4e53-8af5-aa52b6690e26)
 
 # 장르 화면

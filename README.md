@@ -1,6 +1,6 @@
 # 정보
 ※ 노마드 코더의 ReactJS로 영화 웹 서비스 만들기 강의를 듣고 만들었습니다.<br>
-※ <a href="https://springhana.github.io/react-movie/">Moeat</a>
+※ <a href="https://springhana.github.io/react-movie/">Moeat로 이동</a>
 <br>
 
 # 메인 화면
